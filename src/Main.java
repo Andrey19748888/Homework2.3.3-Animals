@@ -3,14 +3,6 @@ import java.util.Arrays;
 public class Main {
 
 
-
-//    public static void addToZoo(Animals animal) {
-//        if (animal instanceof)
-//        if (!Animals.animalExists(animal)) {
-//
-//        }
-//    }
-
     public static void main(String[] args) {
 
 
@@ -50,6 +42,7 @@ public class Main {
         if (!Predator.predatorExists(bear)) {
             Predator.predators[2] = bear;
         }
+
 
         System.out.println("\nСодержимое массива хищники:");
         System.out.println(Arrays.asList(Predator.predators));
@@ -106,7 +99,6 @@ public class Main {
         }
 
         System.out.println("\nСодержимое массива птицы:");
-//        FlyingBirds.flyingBirdsExists(falcon);
 
         System.out.println(Arrays.asList(FlyingBirds.flyingBirdses));
 

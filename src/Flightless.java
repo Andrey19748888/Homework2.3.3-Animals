@@ -1,18 +1,17 @@
 public  class Flightless extends Birds { // нелетающие
     private String movementType;
 
-    static Flightless[] flightlesses = new Flightless[4];      // [null, null, null, null]
+    static Flightless[] flightlesses = new Flightless[4];
 
-    public static boolean flightlessExists(Flightless flightless) {       // exists значит "существует"
-        //       boolean isFound = false;        // "найден"
+    public static boolean flightlessExists(Flightless flightless) {
         for (int i = 0; i < flightlesses.length; i++) {
             System.out.println(flightlesses[i]);
             if (flightlesses[i] != null && flightless.equals(flightlesses[i])) {
-                return true;        // существует и метод завершается
+                return true;
             }
         }
 
-        return false;               // НЕ существует и метод завершается
+        return false;
     }
 
     public void walk() {

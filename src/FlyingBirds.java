@@ -1,21 +1,20 @@
-public class FlyingBirds extends Birds { //летающие
+public class FlyingBirds extends Birds {
     private String movementType;
 
     public void fly() {
     }
 
-    static FlyingBirds[] flyingBirdses = new FlyingBirds[4];      // [null, null, null, null]
+    static FlyingBirds[] flyingBirdses = new FlyingBirds[4];
 
-    public static boolean flyingBirdsExists(FlyingBirds flyingBirds) {       // exists значит "существует"
-        //       boolean isFound = false;        // "найден"
+    public static boolean flyingBirdsExists(FlyingBirds flyingBirds) {
         for (int i = 0; i < flyingBirdses.length; i++) {
             System.out.println(flyingBirdses[i]);
             if (flyingBirdses[i] != null && flyingBirds.equals(flyingBirdses[i])) {
-                return true;        // существует и метод завершается
+                return true;
             }
         }
 
-        return false;               // НЕ существует и метод завершается
+        return false;
     }
 
     public FlyingBirds(String name, int age, String habitat,String movementType) {
@@ -44,25 +43,14 @@ public class FlyingBirds extends Birds { //летающие
 
     @Override
     public void eat() {
-
+        System.out.println("FlyingBirds eating");
     }
 
     @Override
     public void go() {
-
+        System.out.println("The FlyingBirds is coming");
     }
 
-
-
-//    @Override
-//    public void eat() {
-//
-//    }
-//
-//    @Override
-//    public void go() {
-//
-//    }
 }
 
 

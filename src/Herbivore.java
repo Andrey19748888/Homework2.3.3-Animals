@@ -2,22 +2,21 @@ public class Herbivore extends Mammal {
     private String food;
 
 
-    public static Herbivore[] herbivores = new Herbivore[4];      // [null, null, null, null]
+    public static Herbivore[] herbivores = new Herbivore[4];
 
     public Herbivore(String name, int age, String food, String habitat, int speed) {
         super(name,age,habitat, speed);
         this.food = food;
     }
 
-    public static boolean herbivoreExists(Herbivore herbivore) {       // exists значит "существует"
-        //       boolean isFound = false;        // "найден"
+    public static boolean herbivoreExists(Herbivore herbivore) {
         for (int i = 0; i < herbivores.length; i++) {
             if (herbivore.equals(herbivores[i])) {
-                return true;        // существует и метод завершается
+                return true;
             }
         }
 
-        return false;               // НЕ существует и метод завершается
+        return false;
     }
 
     public String toString() {
@@ -30,19 +29,19 @@ public class Herbivore extends Mammal {
     }
 
     public void graze() {
-        System.out.println("grazing...");
-    } // пастись
+        System.out.println("Herbivores graze");
+    }
 
     public void eat() {
-        System.out.println("Herbivore eating...");
+        System.out.println("Herbivore eating");
     }
 
     public void go() {
-        System.out.println("going...");
+        System.out.println("The Herbivore is coming");
     }
 
     public void walk() {
-        System.out.println("walking...");
+        System.out.println("The Herbivore is walking");
     }
 
     public String getFood() {

@@ -1,24 +1,23 @@
-public class Amphibians extends Animal { // земноводные
+public class Amphibians extends Animal {
 
     private String habitat;
 
-    static Amphibians[] amphibian = new Amphibians[4];      // [null, null, null, null]
+    static Amphibians[] amphibian = new Amphibians[4];
 
-    public static boolean amphibiansExists(Amphibians amphibians) {       // exists значит "существует"
-        //       boolean isFound = false;        // "найден"
+    public static boolean amphibiansExists(Amphibians amphibians) {
         for (int i = 0; i < amphibian.length; i++) {
             if (amphibian[i] != null && amphibians.equals(amphibian[i])) {
-                return true;        // существует и метод завершается
+                return true;
             }
         }
 
-        return false;               // НЕ существует и метод завершается
+        return false;
     }
 
-    //static Predator[] predators = new Predator[4];      // [null, null, null, null]
+
 
     public void hunts() {
-
+        System.out.println("Amphibians hunt");
     }
 
     public Amphibians(String name, int age,String habitat) {
@@ -43,12 +42,12 @@ public class Amphibians extends Animal { // земноводные
 
     @Override
     public void eat() {
-
+        System.out.println("Amphibians eating");
     }
 
     @Override
     public void go() {
-
+        System.out.println("The Amphibians is coming");
     }
 
 }

@@ -8,6 +8,7 @@ public abstract class Birds extends Animal {
     }
 
     public void hunts() {
+        System.out.println("bird hunts");
 
     }
 

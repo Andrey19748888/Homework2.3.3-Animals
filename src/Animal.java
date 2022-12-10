@@ -17,7 +17,7 @@ public  abstract class Animal {
     public abstract void eat();
     public abstract void go();
     public void sleep() {
-        System.out.println("sleeping...");
+        System.out.println("the animal is sleeping");
     }
 
     //    @Override

@@ -1,18 +1,17 @@
-public class Predator extends Mammal{//хищники
+public class Predator extends Mammal{
 
     private String food;
 
-    static Predator[] predators = new Predator[4];      // [null, null, null, null]
+    static Predator[] predators = new Predator[4];
 
-    public static boolean predatorExists(Predator predator) {       // exists значит "существует"
-        //       boolean isFound = false;        // "найден"
+    public static boolean predatorExists(Predator predator) {
         for (int i = 0; i < predators.length; i++) {
             if (predators[i] != null && predator.equals(predators[i])) {
-                return true;        // существует и метод завершается
+                return true;
             }
         }
 
-        return false;               // НЕ существует и метод завершается
+        return false;
     }
 
 
@@ -32,17 +31,17 @@ public class Predator extends Mammal{//хищники
     }
 
     public void hunts() {
-        System.out.println();
-    } //охота
+        System.out.println("predators hunt");
+    }
 
     public void eat() {
-        System.out.println();
+        System.out.println("Predator eating");
     }
     public  void go(){
-        System.out.println();
+        System.out.println("The predator is coming");
     }
     public void walk(){
-        System.out.println();
+        System.out.println("The predator is walking");
     }
 
     public String getFood() {
