@@ -32,6 +32,7 @@ public class Main {
             Predator.predators[0] = tiger;
         }
 
+
         Predator hyena = new Predator("Гиена" , 4, "Саванна",50,"мясо");
         if (!Predator.predatorExists(hyena)) {
             Predator.predators[1] = hyena;
