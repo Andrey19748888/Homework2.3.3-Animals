@@ -1,4 +1,4 @@
-public  class Flightless extends Birds { // нелетающие
+public  class Flightless extends Birds {
     private String movementType;
 
     static Flightless[] flightlesses = new Flightless[4];
